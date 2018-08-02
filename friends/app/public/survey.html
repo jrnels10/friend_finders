@@ -12,11 +12,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
+<style>
+    body,
+    .container,
+    .display-div {
+        height: 100vh;
+    }
+
+    button {
+        margin: 4%;
+    }
+
+    .gif {
+        width: 50%;
+    }
+
+    .display-div {
+        padding-top: 2%;
+    }
+
+    @media screen and (max-width: 640px) {
+        button {
+            margin: auto;
+            margin-bottom: 1%;
+
+            width: 100%;
+        }
+        button:hover {
+            background-color: yellow;
+            
+        }
+        .question-survey {
+            margin-top: 20%;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .gif {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    @media screen and (min-width: 641px) {
+        .gif {
+            text-align: center;
+        }
+    }
+</style>
 
 <body>
     <div class="container">
         <div class="jumbotron credentials">
             <h3 class="header-title text-center">Find your new best friend</h3>
+
         </div>
         <div class="jumbotron credentials">
             <p>Please enter your name</p>
@@ -26,313 +73,141 @@
             <div class="btn btn-primary start-quiz">Start survey</div>
         </div>
 
-        <div class="survey">
-
-            <h5 class="text-center">Please answer the questions listed below with 1 being the least likely and 5 being the most similar.</h5>
-
-            <p>1. I was excited to start the bootcamp.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:82%;position:relative;">
-                    <iframe src="https://giphy.com/embed/MOTkF7sT8u2Z2" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>2. On a friday night, I would rather code than go out with friends.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
-                    <iframe src="https://giphy.com/embed/l4FGsLMGYeDcFBmgw" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>3. When I start the weekly bootcamp homework, I look like this...</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
-                    <iframe src="https://giphy.com/embed/5Zesu5VPNGJlm" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>4. How many cups of coffee do you drink while working on coding homework?</p>
-            <p class="lead m-auto">
-                <div class="gif m-5 w-50">
-                    <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
-                        <iframe src="https://giphy.com/embed/zWwngnPi6vWfe" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                            class="giphy-embed" allowFullScreen></iframe>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-default btn-circle q1" value="1">I drink tea
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">less than 5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">less than 10
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">coffee runs through my veins
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>5. Did you give up entire social life for the duration of the bootcamp?</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-                    <iframe src="https://giphy.com/embed/7nFmRxSw6AmyI" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>6. When I dont understand something in class, I hope someone else will ask my question because I am too embarrassed
-                to ask.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:76%;position:relative;">
-                    <iframe src="https://giphy.com/embed/3o6MbtO7rv7ENB2SLC" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>7. During class, I'm thinking more about what I am going to eat next rather than focus on the lesson.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-                    <iframe src="https://giphy.com/embed/9MJ5gV1zVOyE51X193" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>8. Coding comes easy for me.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:51%;position:relative;">
-                    <iframe src="https://giphy.com/embed/x0wfpJqZ1Qtbi" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>9. I felt weird buying school supplies for the bootcamp.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:48%;position:relative;">
-                    <iframe src="https://giphy.com/embed/TEgfDT7b59nEc" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <p>10. I am going on vacation as soon as the bootcamp is over.</p>
-            <div class="gif m-5 w-50">
-                <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
-                    <iframe src="https://giphy.com/embed/GEMf7Y1Kf2d1K" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                        class="giphy-embed" allowFullScreen></iframe>
-                </div>
-            </div>
-            <p class="lead m-auto">
-                <button type="button" class="btn btn-default btn-circle q1" value="1">1
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="2">2
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="3">3
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="4">4
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button type="button" class="btn btn-default btn-circle q1" value="5">5
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-            </p>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary btn-submit-survey" data-toggle="modal" data-target="#exampleModal">Submit Survey</button>
-            </div>
+        <div class="display-div w-100 h-100">
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-                <div class="modal-content w-100">
+                <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Your new Best Friend</h5>
+                        <h5 class="modal-title">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <div class="jumbotron test-div h-auto">
-                        </div>
+                    <div class="modal-body test-div">
+                        <p>Modal body text goes here.</p>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary new-bff">Find new friend</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 <script>
     $(document).ready(function () {
-
-
+        let questAnswArray = [];
+        let questionsSurvey;
+        let mansBF;
+        let survQuest;
+        let tallyQest = 1;
         if ($('.credentials').is(":visible")) {
-            $('.survey').hide();
+            $('.survey').show();
         } else {
             $('.survey').show();
         }
         $('.start-quiz').on('click', function () {
             $('.credentials').hide();
             $('.survey').show();
-
-
+            displayQ();
         })
 
-        let questAnswArray = [];
-        let questionsSurvey;
-        let mansBF;
 
-        $('.q1').on('click', function () {
-            questAnswArray.push(this.value);
-        })
 
+        $.get('/api/questlist', function (req, res) {
+            survQuest = req;
+            // console.log(req)
+        });
         // survey page pulls array of friendslist to compare against user input.
         $.get('/api/friendslist', function (req, res) {
             mansBF = req;
 
         });
 
+        function displayQ() {
+
+            for (i = 0; i < survQuest.length; i++) {
+                // console.log(survQuest[i].num)
+                if (tallyQest > 10) {
+                    console.log("survey ended")
+                    submit();
+                    return;
+                }
+                if (tallyQest === parseInt(survQuest[i].num)) {
+                    console.log(survQuest[i].question);
+                    console.log(tallyQest)
+                    let qAnda = $(`<div class="jumbotron display-div">
+                                    <h4 class="display-4 question-survey">${survQuest[i].num}. ${survQuest[i].question}</h4>
+                                    <hr class="my-4">
+                                    <div class="gif">
+                                    <div style="width:100%;height:0;padding-bottom:82%;position:relative;">
+                                    <iframe src="${survQuest[i].gif}" width="100%" height="100%" style="position:absolute" frameBorder="0"
+                                    class="giphy-embed" allowFullScreen></iframe>
+                                    </div>
+                                    </div>
+                                    <p class="lead m-auto w-100 text-center">
+                                        <button type="button" class="btn btn-warning q1" value="5">5 Most likely
+                                            <i class="glyphicon glyphicon-ok"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-warning q1" value="4">4
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-warning q1" value="3">3
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-warning q1" value="3">2
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-warning q1" value="1">1 Least likely
+                                                 <i class="glyphicon glyphicon-ok"></i>
+                                            </button>
+                                    </p>
+                                    
+                                    </div>`);
+                    $('.display-div').replaceWith(qAnda)
+
+                }
+            }
+
+
+
+            $('.q1').on('click', function () {
+                tallyQest++
+                displayQ();
+                questAnswArray.push(this.value);
+                // console.log('questions: ' + survQuest)
+            });
+
+
+        }
+        function submit() {
+            $('.lead').replaceWith(`<button class="btn btn-primary submit">Submit</button>`);
+            $('.submit').on('click', function () {
+                surveyEnded();
+            })
+        }
+        $(function () { // you can wrap it here with in document ready block
+
+        });
+
+
+        // console.log(mansBF)
+
+
+
+
+
+
+
+
         // once user submits survey, and object is built based on their input.
-        $('.btn-submit-survey').on('click', function () {
+        function surveyEnded() {
+
+
             event.preventDefault();
 
             // Here we grab the form elements
@@ -395,16 +270,32 @@
                 }
             };
 
-            let userImage = $(`<div class="user float-left w-50 p-2">
-                                <img class ="image-friend w-100" src="${questionsSurvey.image}">
-                                </div>`);
-            $('.test-div').append(userImage);
+            // let userImage = $(`<div class="user float-left w-50 p-2">
+            //     <img class ="image-friend w-100" src="${questionsSurvey.image}">
+            //     </div>`);
+            // $('.display-div').replaceWith(userImage);
 
 
-            let friendImage = $(`<div class="bf float-left w-50 p-2">
+            let friendImage = $(`<div class="friends-wrap">
+                                 <h1 class="best-friends w-100 text-center">Best friends</h1>        
+                                <div class="user float-left w-50 p-2">
+                                <h2 class="friend-name text-center">${questionsSurvey.friendName}</h2>
+                                <img class ="image-friend w-100 align-middle" src="${questionsSurvey.image}">
+                                </div>
+                                <div class="bf float-left w-50 p-2">
+                                    <h2 class="friend-name text-center">${bestFriend.friendName}</h2>
                                 <img class="image-friend w-100" src="${bestFriend.image}">
+                                </div>
+                                
+                                <a href="/survey"><button class="btn btn-primary new-friend">New friend</button>
+                                <a href="/"><button class="btn btn-primary home">Home</button>
+                                
                                 </div>`);
-            $('.test-div').append(friendImage)
+            $('.display-div').replaceWith(friendImage);
+
+            // $('.new-friend').on('click', function(){
+
+            // })
 
 
 
@@ -427,9 +318,10 @@
 
 
 
-        });
 
 
+
+        }
 
     })
 </script>
