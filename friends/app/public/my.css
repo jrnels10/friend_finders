@@ -1,0 +1,57 @@
+    body,
+    .container,
+    .display-div {
+        height: 100vh;
+    }
+
+    button {
+        margin: 4%;
+    }
+
+    .gif {
+        width: 50%;
+    }
+
+    .display-div {
+        padding-top: 2%;
+    }
+
+    @media screen and (max-width: 640px) {
+        .container {
+            padding: 0;
+        }
+        button {
+            margin: auto;
+            margin-bottom: 1%;
+
+            width: 100%;
+        }
+        button:hover {
+            background-color: yellow;
+
+        }
+        .display-div {
+            padding-bottom: 0;
+        }
+        .question-survey {
+            font-size: 100%;
+            font-weight: bold;
+        }
+        .gif {
+            width: 80%;
+            margin: auto;
+        }
+        .quest-top{
+            height: 10%;
+        }
+        .quest-mid, .quest-btm {
+            height: 45%;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: 641px) {
+        .gif {
+            text-align: center;
+        }
+    }
